@@ -3,7 +3,7 @@
 
     <Color x:Key="BackgroundColor">#FFFFFF</Color>
     <Color x:Key="ForegroundColor">#212121</Color>
-    <Color x:Key="AccentColor">#6200EE</Color>
+    <Color x:Key="AccentColor">#808080</Color>
     <Color x:Key="HoverColor">#E8E8E8</Color>
     <Color x:Key="PressedColor">#C5C5C5</Color>
 

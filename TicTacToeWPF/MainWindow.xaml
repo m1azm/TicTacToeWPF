@@ -28,7 +28,7 @@
         </Menu>
 
         <UniformGrid Grid.Row="1" Rows="3" Columns="3" Name="gameBoard">
-            <!-- Кнопки будут созданы программно -->
+            
         </UniformGrid>
 
         <TextBlock Grid.Row="2" Name="currentPlayerText" Margin="10"/>
