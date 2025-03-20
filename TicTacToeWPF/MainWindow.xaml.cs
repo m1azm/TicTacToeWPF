@@ -15,7 +15,7 @@ namespace TicTacToeWPF
             InitializeComponent();
             InitializeGameBoard();
             UpdateBoard();
-            ChangeTheme("Dark");
+            ChangeTheme("Light");
         }
 
         private void InitializeGameBoard()
@@ -167,6 +167,10 @@ namespace TicTacToeWPF
         private void Load_Click(object sender, RoutedEventArgs e) => LoadGame();
         private void LightTheme_Click(object sender, RoutedEventArgs e) => ChangeTheme("Light");
         private void DarkTheme_Click(object sender, RoutedEventArgs e) => ChangeTheme("Dark");
+        private void WinterTheme_Click(object sender, RoutedEventArgs e) => ChangeTheme("Winter");
+        private void SpringTheme_Click(object sender, RoutedEventArgs e) => ChangeTheme("Spring");
+        private void SummerTheme_Click(object sender, RoutedEventArgs e) => ChangeTheme("Summer");
+        private void AutumnTheme_Click(object sender, RoutedEventArgs e) => ChangeTheme("Autumn");
         private void Exit_Click(object sender, RoutedEventArgs e) => Close();
     }
 }

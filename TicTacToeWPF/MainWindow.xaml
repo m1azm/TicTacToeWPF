@@ -20,6 +20,10 @@
             <MenuItem Header="Тема">
                 <MenuItem Header="Светлая" Click="LightTheme_Click"/>
                 <MenuItem Header="Темная" Click="DarkTheme_Click"/>
+                <MenuItem Header="Зимняя" Click="WinterTheme_Click"/>
+                <MenuItem Header="Весенняя" Click="SpringTheme_Click"/>
+                <MenuItem Header="Летняя" Click="SummerTheme_Click"/>
+                <MenuItem Header="Осенняя" Click="AutumnTheme_Click"/>
             </MenuItem>
         </Menu>
 
