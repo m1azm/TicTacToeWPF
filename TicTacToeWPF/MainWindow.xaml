@@ -1,0 +1,47 @@
+﻿<Window x:Class="TicTacToeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Крестики-нолики" Height="400" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Строка для меню -->
+            <RowDefinition Height="*"/>
+            <!-- Строка для игрового поля -->
+            <RowDefinition Height="Auto"/>
+            <!-- Строка для текущего состояния игры -->
+        </Grid.RowDefinitions>
+
+        <!-- Меню с элементами для управления игрой -->
+        <Menu Grid.Row="0">
+            <MenuItem Header="Игра">
+                <!-- Новый запуск, сохранение, загрузка и выход из игры -->
+                <MenuItem Header="Новая игра" Click="NewGame_Click"/>
+                <MenuItem Header="Сохранить" Click="Save_Click"/>
+                <MenuItem Header="Загрузить" Click="Load_Click"/>
+                <Separator/>
+                <MenuItem Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Режим">
+                <!-- Выбор режима игры: против человека или компьютера -->
+                <MenuItem Header="Против человека" Click="HumanMode_Click"/>
+                <MenuItem Header="Против компьютера" Click="ComputerMode_Click"/>
+            </MenuItem>
+            <MenuItem Header="Тема">
+                <!-- Выбор темы оформления -->
+                <MenuItem Header="Светлая" Click="LightTheme_Click"/>
+                <MenuItem Header="Темная" Click="DarkTheme_Click"/>
+                <MenuItem Header="Зимняя" Click="WinterTheme_Click"/>
+                <MenuItem Header="Весенняя" Click="SpringTheme_Click"/>
+                <MenuItem Header="Летняя" Click="SummerTheme_Click"/>
+                <MenuItem Header="Осенняя" Click="AutumnTheme_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Игровое поле (3 строки, 3 столбца) -->
+        <UniformGrid Grid.Row="1" Rows="3" Columns="3" Name="gameBoard"/>
+
+        <!-- Текстовое поле для отображения текущего игрока -->
+        <TextBlock Grid.Row="2" Name="currentPlayerText" Margin="10"/>
+    </Grid>
+</Window>
